@@ -6,7 +6,7 @@
 Créer un pipeline Jenkins avec Docker et Maven.
 
 ## Pipeline Jenkins
-![Build](pipeline1.png)
+![Build](pipeline1'.png)
 ![Success](pipeline2.png) 
 ![Success](pipeline3.png) 
 
