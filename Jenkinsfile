@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'my-maven-git:latest'
+            image 'maven:3.8.7-openjdk-11'
             args '-v /root/.m2:/root/.m2'
         }
     }
@@ -16,7 +16,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                dir('TPJavaPipeLine-NomPrenom/java-maven/maven') {
+                dir('TPJavaPipeLine-BouhmadiManar/java-maven/maven') {
                     sh 'mvn clean package'
                     sh 'java -jar target/maven-0.0.1-SNAPSHOT.jar'
                 }
